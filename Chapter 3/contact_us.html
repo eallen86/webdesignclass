@@ -35,18 +35,41 @@
             <form>
                 <fieldset>
                     <legend>Visitor Feeedback Form</legend>
-                <label for="f_name">First Name:</label>
-                <input type="text" id="f_name" name="f_name" required/>
-                <br/>
-                <label for="l_name">Last Name:</label>
-                <input type="text" id="l_name" name="l_name" required/>
-                <br/>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required/>
-                </fieldset>
-                .
-                <fieldset>
-                    <legend>Poopy Doo</legend>
+                    <label for="f_name">First Name:</label>
+                    <input type="text" id="f_name" name="f_name" required/>
+                    <br/>
+                    <label for="l_name">Last Name:</label>
+                    <input type="text" id="l_name" name="l_name" required/>
+                    <br/>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required/>
+                    <fieldset>
+                        <legend>How did you hear about? Check some stuff please:</legend>
+                        <input type="checkbox" id="google" name="google" value="Google"/>
+                        <label for="google">Google Search</label>
+                        <input type="checkbox" id="owl" name="owl" value="Owl"/>
+                        <label for="owl">An Owl Told Me</label>
+                        <input type="checkbox" id="skywriter" name="skywriter" value="Skywriter"/>
+                        <label for="skywriter">I Saw it in a dream once</label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Would you like to sign up for some bullshit?</legend>
+                        <input type="radio" id="hell_yes" name="subscribe" value="Hell_Yes"/>
+                        <label for="hell_yes">Hell Yes</label>
+                        <input type="radio" id="prolly_not" name="subscribe" value="Prolly_Not"/>
+                        <label for="prolly_not">Prolly Not</label>
+                    </fieldset>
+                    <br>
+                    <label for="nature">What is the nature of your quest?</label>
+                    <select id="nature" name="nature" required>
+                        <option value="slay_dragon">To Slay a Dragon</option>
+                        <option value="arcane_magic">To Learn Arcane Magic</option>
+                        <option value="peasant_uprising">To Quell or Start a Peasant Uprising</option>
+                        <option value="loot">To Gain Enormous Riches</option>
+                    </select>   
+                    <textarea name="message" rows="10" cols="50" maxlength="500" placeholder="Write a short novel here" required></textarea>
+                    <input type="submit" value="Submit"/>
                 </fieldset>
             </form>
         </section>
