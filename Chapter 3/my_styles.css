@@ -26,12 +26,13 @@ nav ul {
 }
 
 nav ul li:hover {
-    background-color: rgb(148,51,62);
+    background-color: rgb(255,255,255);
     border-radius: 5px;
+    border: solid black;
 }
 
 nav ul li a {
-    color: rgb(255,255,0);
+    color: rgb(30,144,255);
     font-weight: bold;
     text-decoration: none;
 }
@@ -81,4 +82,28 @@ footer {
     font-family: Garamond;
     background-color: rgb(200,200,200);
     margin: 0px -10px 20px -10px;
+}
+
+/* Styles for the products table */
+section table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 40%;
+    text-align: center;
+}
+
+section table th, td {
+    border: 1px solid rgb(175,175,175);
+}
+
+section table tr:nth-child(even) {
+    background-color: rgb(235,240,255);
+}
+
+section table col.price {
+    background-color: rgb(255,255,224);
+}
+
+section table tr:hover {
+    background-color: red;
 }
